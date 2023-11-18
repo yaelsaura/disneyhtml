@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script&family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script&family=Great+Vibes&family=Kdam+Thmor+Pro&display=swap');
+
+body,html{
+    margin: 0; /* a l'interieur, left, top, right, bottom px*/
+    padding: 0; /* a l'exterieur */
+    font-family: 'Kdam Thmor Pro';
+    background-color: black;
+}
+
+
+
+.background {
+    background-image: url('images/disney.jpg');
+    background-position: center; /* centrer l'image */
+    background-repeat: no-repeat; /* pour ne pas que l'image se repete si elle est plus petite que la boite */
+    background-size: cover; /* cover = adapter l'image dans sa largeur ; contain = adapter l'image dans sa hauteur */
+    height: 60vh; /* viewport heaight */
+    width: 100vw; /* viewport width */
+}
+
+.navbar {
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+}
+
+.lien {
+    text-decoration: none;
+    color: white;
+    opacity: 70%;
+    margin: 4vw;
+    transition : 1s ease-out;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+}
+.lien:hover {
+    opacity: 100%;
+    color: white;
+}
+.header {
+    background-color: rgba(0, 0, 0, 0.347);
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.logo {
+    color: white;
+    font-size: 6em;
+    font-family: 'Great Vibes';
+    text-shadow: 3px 3px 4px rgb(159, 173, 244);
+}
+
+.punchline {
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    margin: 2vh;
+    font-family: 'Great Vibes';
+    text-shadow: 1px 1px 1px rgb(159, 173, 244);
+    letter-spacing: 2px;
+}
+
+.punchline2 {
+    color: white;
+    font-size: 2em;
+    margin: 3vh;
+    font-family: 'Dancing Script';
+    text-shadow: 1px 1px 1px rgb(159, 173, 244);
+    transition: all 1s ease-in-out;
+}
+
+.punchline2:hover {
+    font-size: 4em;
+    color: rgb(124, 143, 241);
+}
+
+.panneaux {
+    height: 75%;
+    display: flex;
+}
+
+.panno {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition : flex 1.5s ease-in-out;
+}
+
+.panno:hover{
+    flex: 1.5;
+}
+
+.panno>span {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px black;
+    opacity: 0%;
+    transition : all 1.5s ease-in-out;
+    letter-spacing: 1px;
+}
+
+.haut {
+    transform: translateY(-170%);
+}
+
+.bas {
+    transform: translateY(170%);
+}
+
+.panno:hover>span{
+    opacity: 100%;
+    transform: translateY(0);
+}
+.raya {background-image: url('images/raya.jpg');}
+.viceversa {background-image: url('images/viceversa.jpg');}
+.avengers {background-image: url('images/avengers.png');}
+
+@media screen and (max-width :600px) {
+    .lien{
+        font-size: 1em;
+    }
+    .punchline{
+        font-size : 2em;
+    }
+    .punchline2{
+        font-size: 1.5em;
+    }
+    .punchline2:hover {
+        font-size: 4em;
+        color: rgb(124, 143, 241);
+    }
+    .panno>span {
+        font-size: .8em;
+    }
+}
+

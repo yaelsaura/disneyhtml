@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script&family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script&family=Great+Vibes&family=Kdam+Thmor+Pro&display=swap');
+
+
+
+body,html{
+    margin: 0; /* a l'interieur, left, top, right, bottom px*/
+    padding: 0; /* a l'exterieur */
+    font-family: 'Kdam Thmor Pro';
+}
+
+
+
+.background {
+    background-color: rgb(3, 21, 50);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 100vh; 
+    width: 100vw;
+}
+
+.navbar {
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/dessa.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    
+}
+
+.logo {
+    color: white;
+    font-size: 6em;
+    font-family: 'Great Vibes';
+    text-shadow: 3px 3px 4px rgb(0, 0, 0);
+    padding-bottom: 10px;
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.617);
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    width: 90vw;
+}
+
+.visible {
+    display: flex;
+}
+
+.lien {
+    text-decoration: none;
+    color: white;
+    opacity: 70%;
+    margin: 4vw;
+    transition : 1s ease-out;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+}
+
+.lien:hover {
+    opacity: 100%;
+    color: white;
+}
+
+.header {
+    height: 70%;
+    display: flex;
+}
+
+.panno {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition : flex 1s ease;
+}
+
+
+.ouvert {
+    flex: 3;
+}
+
+.textepanno {
+    color: white;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 3px black;
+    opacity: 0%; 
+    transition: opacity 1s; 
+    letter-spacing: 1px;
+}
+
+.ouvert>.textepanno {
+    opacity: 100%;
+}
+
+
+.belle {background-image: url('images/belleda.png');}
+.raiponce {background-image: url('images/raiponce.png');}
+.rdn {background-image: url('images/rdn.jpg');}
+.vaiana {background-image: url('images/vaiana.jpg');}
+.cendrillon {background-image: url('images/cendrillon.png');}
+
+.burger{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
+    width: 5vh;
+    border: white 4px solid;
+    padding: 3px;
+    border-radius : 5%;
+    cursor: pointer; /* cliquable */
+    display: none;
+}
+
+.steak{
+   border:white 2px solid ;
+   width:80%;
+   border-radius: 5%;
+}
+
+/*.menu2{
+    background-color: rgb(3, 21, 50);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+}*/
+
+@media screen and (max-width :600px) { /* tant que page inférieure à 600px */
+    .header{
+        flex-direction: column;
+    }
+    .textepanno{
+        font-size: .7em;
+    }
+    .lien{
+        display: none;
+    }
+    .burger{
+        display: flex;
+    }
+    /*.menu2{
+        display: flex;
+    }*/
+
+}

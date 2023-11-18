@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script&family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script&family=Great+Vibes&family=Kdam+Thmor+Pro&display=swap');
+
+body,html{
+    margin: 0; /* a l'interieur, left, top, right, bottom px*/
+    padding: 0; /* a l'exterieur */
+    font-family: 'Kdam Thmor Pro';
+    background-color: black;
+}
+
+
+
+.background {
+    background-color: rgb(0, 0, 0);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 100vh; 
+    width: 100vw;
+}
+
+.navbar {
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/belle_la.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.617);
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    width: 90vw;
+}
+
+.logo {
+    color: white;
+    font-size: 6em;
+    font-family: 'Great Vibes';
+    text-shadow: 3px 3px 4px rgb(0, 0, 0);
+    padding-bottom: 10px;
+}
+
+.lien {
+    text-decoration: none;
+    color: white;
+    opacity: 70%;
+    margin: 4vw;
+    transition : 1s ease-out;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+}
+.lien:hover {
+    opacity: 100%;
+    color: white;
+}
+
+.panneaux {
+    background-color: rgb(8, 9, 16);
+    height: 50%;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.cercle {
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    display: flex;
+    margin-top: 50px;
+    transition: all 1s ease-in-out;
+}
+
+.malefique { background-image: url('images/malefique.jpg');}
+.aladdin {background-image: url('images/aladdin.png');}
+.cruella {background-image: url('images/cruella.jpeg');}
+
+.cercle:hover {
+    height: 360px;
+    width: 360px;
+}
+
+.panneaux_texts {
+    background-color: rgb(8, 9, 16);
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.textmal {
+    font-family: "PentaGramsMalefissentRegular", "Kdam Thmor Pro";
+    font-size: 2em;
+    color: silver;
+    text-shadow: 1px 1px 2px rgb(195, 194, 194);
+}
+
+.textal {
+    font-family: "Aladdin", "Kdam Thmor Pro";
+    font-size: 2.2em;
+    color: gold;
+    text-shadow: 1px 1px 2px rgb(240, 240, 176);
+}
+
+.textcru {
+    font-family: "Abdullah", "Kdam Thmor Pro";
+    font-size: 2.2em;
+    color: darkred;
+    text-shadow: 1px 1px 2px rgb(120, 45, 45);
+}
+
+@media screen and (max-width :600px) { /* tant que page inférieure à 600px */
+    .cercle{
+        height: 200px;
+        width: 200px;
+        border-radius: 0%;
+        justify-content: center;
+
+    }
+    .panneaux{
+        height: 20%;
+    }
+    .cercle:hover {
+        height: 250px;
+        width: 250px;
+    }
+    .pannotext{
+        font-size: .8em;
+    }
+    .panneaux_texts{
+        height: 40%;
+    }
+    .lien{
+        font-size: 1em;
+    }
+}
